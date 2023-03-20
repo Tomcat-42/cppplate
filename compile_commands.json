@@ -1,0 +1,31 @@
+[
+{
+  "directory": "/mnt/files/projects/bry/cppplate",
+  "arguments": ["clang", "-c", "-Qunused-arguments", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/b/benchmark/1.7.0/41e335b0d4864392b8c21cd6ed5e875b/include", "-std=c++2b", "-DNDEBUG", "-o", "build/.objs/app_bench/linux/x86_64/release/bench/lib/cipher_dsa_benchmarks.cpp.o", "bench/lib/cipher_dsa_benchmarks.cpp"],
+  "file": "bench/lib/cipher_dsa_benchmarks.cpp"
+},
+{
+  "directory": "/mnt/files/projects/bry/cppplate",
+  "arguments": ["clang", "-c", "-Qunused-arguments", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/b/benchmark/1.7.0/41e335b0d4864392b8c21cd6ed5e875b/include", "-std=c++2b", "-DNDEBUG", "-o", "build/.objs/app_bench/linux/x86_64/release/bench/main.cpp.o", "bench/main.cpp"],
+  "file": "bench/main.cpp"
+},
+{
+  "directory": "/mnt/files/projects/bry/cppplate",
+  "arguments": ["clang", "-c", "-Qunused-arguments", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/c/cxxopts/v3.0.0/533f1970a0884648838ce983784f4181/include", "-std=c++2b", "-DNDEBUG", "-o", "build/.objs/lib/linux/x86_64/release/src/lib/lib.cpp.o", "src/lib/lib.cpp"],
+  "file": "src/lib/lib.cpp"
+},
+{
+  "directory": "/mnt/files/projects/bry/cppplate",
+  "arguments": ["clang", "-c", "-Qunused-arguments", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/g/gtest/1.12.1/20a632ab8cd449b696b952cd2c20ce18/include", "-std=c++2b", "-DNDEBUG", "-o", "build/.objs/app_test/linux/x86_64/release/test/lib/lib_tests.cpp.o", "test/lib/lib_tests.cpp"],
+  "file": "test/lib/lib_tests.cpp"
+},
+{
+  "directory": "/mnt/files/projects/bry/cppplate",
+  "arguments": ["clang", "-c", "-Qunused-arguments", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/g/gtest/1.12.1/20a632ab8cd449b696b952cd2c20ce18/include", "-std=c++2b", "-DNDEBUG", "-o", "build/.objs/app_test/linux/x86_64/release/test/main.cpp.o", "test/main.cpp"],
+  "file": "test/main.cpp"
+},
+{
+  "directory": "/mnt/files/projects/bry/cppplate",
+  "arguments": ["clang", "-c", "-Qunused-arguments", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/c/cxxopts/v3.0.0/533f1970a0884648838ce983784f4181/include", "-std=c++2b", "-DNDEBUG", "-o", "build/.objs/app/linux/x86_64/release/src/main.cpp.o", "src/main.cpp"],
+  "file": "src/main.cpp"
+}]

@@ -1,0 +1,42 @@
+name: CI/CD
+on:
+  push:
+    tags:
+      - "v*.*.*"
+permissions:
+  contents: write
+  discussions: write
+jobs:
+  build-test-deploy:
+    runs-on: ubuntu-latest
+    name: Build, test, deploy to docker hub and release
+    steps:
+      - name: Check out this repository
+        uses: actions/checkout@v3
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v2
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      - name: Login to Docker-Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Build
+        run: ${PWD}/scripts/build
+      - name: Test
+        run: ${PWD}/scripts/test
+      - name: Publish
+        run: ${PWD}/scripts/publish
+      - name: Pack
+        uses: montudor/action-zip@v1
+        with:
+          args: zip -qq -r app.zip app
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: "app.zip"
+          fail_on_unmatched_files: true
+          name: app
+          tag_name: app

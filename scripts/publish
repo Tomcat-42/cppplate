@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+
+docker push user/app:latest

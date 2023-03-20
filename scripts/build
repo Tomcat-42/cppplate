@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+
+DOCKER_BUILDKIT=1 docker build -t user/app .
+
+# extract the binaries from the container
+docker create --name extract user/app
+docker cp extract:/app ./
+docker rm extract
