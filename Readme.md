@@ -15,37 +15,58 @@
 > [Github Actions](https://github.com/features/actions) and
 > [Docker](https://www.docker.com/).
 
+
+<!-- TOC start -->
+- [Tools](#tools)
+  * [Xmake](#xmake)
+    + [Installing deps](#installing-deps)
+    + [Building](#building)
+    + [Running](#running)
+    + [Installing](#installing)
+    + [Project structure and configuration](#project-structure-and-configuration)
+  * [Docker](#docker)
+  * [Doxygen](#doxygen)
+  * [Github Actions](#github-actions)
+<!-- TOC end -->
+
+<!-- TOC --><a name="tools"></a>
 ## Tools
 
+<!-- TOC --><a name="xmake"></a>
 ### Xmake
 
 [xmake](https://xmake.io/#/) is a fully-fledged and modern C++ package manager +
 build system + project generator. For installation and usage refer to its docs.
 
+<!-- TOC --><a name="installing-deps"></a>
 #### Installing deps
 
 ```bash
 xrepo install <PKG>
 ```
 
+<!-- TOC --><a name="building"></a>
 #### Building
 
 ```bash
 xmake build <TARGET>
 ```
 
+<!-- TOC --><a name="running"></a>
 #### Running
 
 ```bash
 xmake run <TARGET>
 ```
 
+<!-- TOC --><a name="installing"></a>
 #### Installing
 
 ```bash
 xmake install
 ```
 
+<!-- TOC --><a name="project-structure-and-configuration"></a>
 #### Project structure and configuration
 
 All the project configuration is done in the file `./xmake.lua`(refer to xmake
@@ -58,6 +79,7 @@ docs). The basic struture is as follows:
 - A unit test target.
 - A benchmark target.
 
+<!-- TOC --><a name="docker"></a>
 ### Docker
 
 The project use the [cppdev](https://github.com/Tomcat-42/cppdev) environment
@@ -67,12 +89,14 @@ The scripts `./scripts/build`, `./scripts/test` and `./scripts/publish` are
 usefull for building the project inside a Docker container. Refer to the
 `./Dockerfile` for configuration, multi-stage build and other tweaks.
 
+<!-- TOC --><a name="doxygen"></a>
 ### Doxygen
 
 This project uses the [Doxygen](https://www.doxygen.nl/) doc generation. Refer
 the `./Doxyfile` for configuration. You can run `doxygen` for generating the
 docs.
 
+<!-- TOC --><a name="github-actions"></a>
 ### Github Actions
 
 For a CI/CD pipeline, the [Github Actions](https://github.com/features/actions)
